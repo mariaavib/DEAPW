@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diario de Aprendeizaje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+            <h3><a href="index.html">GitHub</a></h3>
+            <li>
+                <ul><a href="areasFicheros.html">Áreas y ficheros</a></ul>
+                <ul><a href="configuracion.html">Configuración Inicial y subir cambio</a></ul>
+                <ul><a href="iniciarProceso.html">Iniciando el proceso</a></ul>
+                <ul><a href="ramas.html">Ramas</a></ul>
+                <ul><a href="primerosPasos.html">Primeros Pasos</a></ul>
+                <ul><a href="evaluacion.html">Evaluación del progreso</a></ul>
+            </li>
+            <h3>Ubuntu Server</h3>
+        </li>     
+    </aside>
+    <main>
+        <div class="estados">
+            <h2>Gestion de ramas</h2>
+                <ul>
+                    <li>Bifurcaciones de nuevas versiones, con respecto a la rama máster.</li>
+                    <li>Todos los commit se aplican sobre una rama.</li>
+                    <li>Por defecto trabajamos sobre la rama máster.</li>
+                    <li>Crear una rama consiste en copiar un commit de una rama
+                        determinada, pásalo a la nueva rama y continuar el trabajo, sin afectar
+                        el flujo del trabajo principal.</li>
+                </ul>
+                <ul>                  
+                    <li><span class="resaltar">git branch</span> se usa para listar, crear o borrar ramas.</li>
+                    <ul>
+                        <li><span class="resaltar2">git branch➙</span>lista las ramas existentes</li>
+                        <li><span class="resaltar2">git branch [nombre_nueva_rama]➙</span>crea una nueva rama</li>
+                        <li><span class="resaltar2">git branch -d [nombre_nueva_rama] ➙</span>elimina una rama existente.</li>
+                        <li><span class="resaltar2">git branch –m [old_nombre_rama] [new_nombre_rama] ➙</span>cambia
+                            el nombre de una rama</li>
+                    </ul>
+                </ul>
+                <ul>     
+                    <li><span class="resaltar">git log</span> muestra los IDs de los commits del repositorio local.</li>
+                    <ul>
+                        <li><span class="resaltar2">git log –p ➙</span>incluye el historial de las confirmaciones, incluyendo todos
+                            los archivos y sus cambios</li>
+                        <li><span class="resaltar2">git log --oneline ➙</span>muestra historial commits en una sola línea x commit.</li>
+                        <li><span class="resaltar2">git log --oneline --all ➙</span>muestra historial commits de todas las ramas</li>
+                    </ul>
+                </ul>
+                <ul>     
+                    <li><span class="resaltar">git checkout</span>muestra historial commits de todas las ramas</li>
+                    <ul>
+                        <li><span class="resaltar2">git checkout –b [nombre_nueva_branch] ➙</span> muestra historial commits de todas las ramas</li>
+                        <li><span class="resaltar2">git checkout [ID_commit] ➙</span>podemos volver a cualquier versión
+                            anterior en base al ID del commit..</li>
+                    </ul>
+                </ul>
+                <ul>     
+                    <li><span class="resaltar">git diff</span> se usa para ver una lista de todos los conflictos presentes</li>
+                    <ul>
+                        <li><span class="resaltar2">git diff [branch_origen] [branch_destino] ➙</span>ver los conflictos que
+                            hay entre ramas, por ejemplo antes de fusionarlas.</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li><span class="resaltar">git merge [nombre rama] ➙</span>se usa para fusionar una rama con otra rama activa.<br></li>
+                    <li><span class="resaltar">git merge --abort ➙</span>descarta la fusión por conflictos en la misma.</li>
+                    <li><span class="resaltar">git log --merge ➙</span>te muestra información de los 2 commits que han generado el conflicto</li>
+                </ul>
+        </div>
+    </main>
+</body>
+</html>
