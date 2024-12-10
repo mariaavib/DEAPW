@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diario de Aprendeizaje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <h3><a href="00index.html">GitHub</a></h3>
+        <li>
+            <ul><a href="01areasFicheros.html">Áreas y ficheros</a></ul>
+            <ul><a href="01configuracion.html">Configuración Inicial y subir cambio</a></ul>
+            <ul><a href="01iniciarProceso.html">Iniciando el proceso</a></ul>
+            <ul><a href="01ramas.html">Ramas</a></ul>
+            <ul><a href="01primerosPasos.html">Primeros Pasos</a></ul>
+            <ul><a href="01evaluacion.html">Evaluación del progreso</a></ul>
+        </li>
+        <h3>Servicios Web</h3>
+        <li>
+            <li>
+                <ul><a href="02protocolos.html">PROTOCOLOS HTTP/HTTPS</a></ul>
+                <ul>
+                    <a href="02apache.html">Apache</a>
+                    <ul>
+                        <li><a href="02dBasicas.html">Directivas Básicas</a></li>
+                        <li><a href="02dBloque.html">Directivas de Bloque</a></li>
+                    </ul>
+                </ul>
+            </li>
+        </li>
+    </aside>
+    <main>
+        <div class="git" id="top">
+            <h2>Configuración Inicial de GIT</h2>
+            <p>
+                <span class="resaltar">git config --global user.name "Maria"➙ </span>configurar el nombre y usuario<br>
+                <span class="resaltar">git config --global user.mail "mariavidigalbarroso.guadalupe@alumnado.fundacionloyola.net"➙ </span>configurar el correo<br>
+                Esto asegura que tanto el nombre como el correo estén configurados para todos los commits<br>
+                <span class="resaltar">git --version ➙ </span>Este comando se utiliza para verificar la versión de Git que está instalada en tu sistema.<br>
+                <span class="resaltar">git config --list ➙ </span>muestra una lista de todas las configuraciones de Git que están actualmente establecidas en tu entorno. 
+            </p>
+            <h2>Algunos comandos básicos</h2>
+            <p>
+                <span class="resaltar">git help ➙</span> muestra la ayuda del comando que se le indique<br>
+                <span class="resaltar">git init ➙</span> inicializa el repositorio local
+            </p>
+            <h2>Subir cambios</h2>
+            <p>
+                <ul>
+                    <li><span class="resaltar">git init ➙</span> Para crear nuestro staging (área de preparación) y repositorio local</li>
+                    <li><span class="resaltar">GIT ADD </span> agregamos archivos al área de staging con:</li>
+                        <ul>
+                            <li><span class="resaltar2"> git add nombre_archivo ➙</span> para agregar un archivo específico</li>
+                            <li><span class="resaltar2"> git add . ➙</span> para agregar todos los archivos</li>
+                        </ul>
+                    <li><span class="resaltar"> git commit ➙ </span> enviamos nuestroa archivos al repositorio local. Agregando -m "" podemos colocar un mensaje y registrar los commits realizados</li>
+                    <li><span class="resaltar"> git push ➙</span> enviamos nuestros cambios al servidor remoto</li> 
+                </ul>
+            </p>
+            <a href="#top" id="volver-arriba"><img src="./img/flecha-hacia-arriba.png" id="flechaArriba"></a>
+        </div>
+    </main>
+</body>
+</html>
