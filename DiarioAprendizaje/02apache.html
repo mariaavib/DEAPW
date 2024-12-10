@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diario de Aprendeizaje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <h3><a href="00index.html">GitHub</a></h3>
+        <li>
+            <ul><a href="01areasFicheros.html">Áreas y ficheros</a></ul>
+            <ul><a href="01configuracion.html">Configuración Inicial y subir cambio</a></ul>
+            <ul><a href="01iniciarProceso.html">Iniciando el proceso</a></ul>
+            <ul><a href="01ramas.html">Ramas</a></ul>
+            <ul><a href="01primerosPasos.html">Primeros Pasos</a></ul>
+            <ul><a href="01evaluacion.html">Evaluación del progreso</a></ul>
+        </li>
+        <h3>Servicios Web</h3>
+        <li>
+            <li>
+                <ul><a href="02protocolos.html">PROTOCOLOS HTTP/HTTPS</a></ul>
+                <ul>
+                    <a href="02apache.html">Apache</a>
+                    <ul>
+                        <li><a href="02dBasicas.html">Directivas Básicas</a></li>
+                        <li><a href="02dBloque.html">Directivas de Bloque</a></li>
+                    </ul>
+                </ul>
+            </li>
+        </li>
+    </aside>
+    <main>
+        <div class="sw" id="top">
+            <h2>Estadisticas de uso</h2>
+            <h3><img src="./img/flecha.png" id="flecha2">Características y ventajas de Apache</h3>
+            <ul id="listas2">
+                <li><img src="./img/flecha-correcta.png" id="flecha">Servidor web HTTP de código abierto</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha">Se desarrolla dentro del proyecto HTTP Server (httpd) de la Apache Software Foundation</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha">Implementa el protocolo HTTP/1.1</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha">Modular</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha">Multi-plataforma (Windows, Linux, MacOS)</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha">Muy estable</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha">Tradicionalmente solución más popular (soporte)</li>
+            </ul>
+            <h3><img src="./img/flecha.png" id="flecha2">Gestión del Servicio Apache</h3>
+            <ul id="listas3">
+                <li><img src="./img/flecha-correcta.png" id="flecha">service apache2 [start|stop|restart|reload|status]</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><span id="marcar">start:</span> iniciar el servicio apache2</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><span id="marcar">stop:</span> parar el servicio apache2</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><span id="marcar">restart:</span> reiniciar el servicio apache2</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><span id="marcar">reload:</span> reinicia el servicio apache2, sin matar las conexiones activas</li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><span id="marcar">status:</span> presentar el estado del servicio apache2</li>
+            </ul>
+            <h3><img src="./img/flecha.png" id="flecha2">Estructura del Servidor Web Apache</h3>
+            <ul id="listas4">
+                <li>Contenido aplicaciones Web del servidor web Apache /var/www</li>
+                <li>Ruta virtual host / site por defecto /var/www/html</li>
+                <li>Configuración servidor web Apache /etc/apache2</li>
+                <li>Módulos servidor Web</li>
+                <li>Ficheros configuración (Apache, Virtual Host)</li>
+                <li>Registro ficheros de actividad (Servidor, Virtual Host) logs /var/log/apache2</li>
+            </ul>
+            <h3><img src="./img/flecha.png" id="flecha2">Estructura / Tipo de Directorios</h3>
+            <ul id="listas5">
+                <li>Directorios de CONTENIDO:
+                    <ul>
+                        <li>/var/www: ruta por defecto para alojamiento Web (htdocs)</li>
+                        <li>/var/www/midominio: ruta para los host virtuales</li>
+                        <li>/var/www/html: ruta del virtual host / site por defecto de Apache</li>
+                    </ul>
+                </li>
+                <li>Directorio de REGISTROS:
+                    <ul>
+                        <li>/var/log/apache2/access.log: log que registra todas las peticiones hechas al servidor Web</li>
+                        <li>/var/log/apache2/error.log: log que registra todos los errores producidos en el servidor Web</li>
+                    </ul>
+                </li>
+                <li>Directorios de CONFIGURACIÓN:
+                    <ul>
+                        <li>/etc/apache2: directorio por defecto de los archivos de configuración (Apache/conf/)</li>
+                        <li>/etc/apache2/apache2.conf: configuración principal global de Apache (Apache/conf/httpd.conf)</li>
+                        <li>/etc/apache2/ports.conf: archivos los puertos por los que Apache escucha, por defecto, 80 / 443 si SSL está habilitado</li>
+                        <li>/etc/apache2/sites-available: archivos de configuración de los VH. Apache no usará los archivos de configuración que se encuentren en este directorio si no están vinculados al directorio «sites-enabled»</li>
+                        <li>/etc/apache2/sites-enabled/: VH del servidor web</li>
+                        <li>/etc/apache2/conf-available/ y /etc/apache2/conf-enabled/: archivos de configuración que no pertenecen a ningún VH</li>
+                        <li>/etc/apache2/mods-available/ y /etc/apache2/mods-enabled/: contienen los módulos habilitados (enabled) y los disponibles (available) para su uso</li>
+                        <li>Archivos *.load: Archivos carga específicos de algún módulo en particular</li>
+                        <li>Archivos *.conf: Archivos de configuración de estos módulos</li>
+                    </ul>
+                </li>
+                <a href="#top" id="volver-arriba"><img src="./img/flecha-hacia-arriba.png" id="flechaArriba"></a>
+        </div>
+    </main>
+</body>
+</html>

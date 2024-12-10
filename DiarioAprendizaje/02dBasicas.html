@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diario de Aprendeizaje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <h3><a href="00index.html">GitHub</a></h3>
+        <li>
+            <ul><a href="01areasFicheros.html">Áreas y ficheros</a></ul>
+            <ul><a href="01configuracion.html">Configuración Inicial y subir cambio</a></ul>
+            <ul><a href="01iniciarProceso.html">Iniciando el proceso</a></ul>
+            <ul><a href="01ramas.html">Ramas</a></ul>
+            <ul><a href="01primerosPasos.html">Primeros Pasos</a></ul>
+            <ul><a href="01evaluacion.html">Evaluación del progreso</a></ul>
+        </li>
+        <h3>Servicios Web</h3>
+        <li>
+            <li>
+                <ul><a href="02protocolos.html">PROTOCOLOS HTTP/HTTPS</a></ul>
+                <ul>
+                    <a href="02apache.html">Apache</a>
+                    <ul>
+                        <li><a href="02dBasicas.html">Directivas Básicas</a></li>
+                        <li><a href="02dBloque.html">Directivas de Bloque</a></li>
+                    </ul>
+                </ul>
+            </li>
+        </li>
+    </aside>
+    <main>
+        <div class="sw" id="top">
+            <h1>Archivo de Configuración Global</h1>
+            <p>El archivo de configuración global de Apache está ubicado en:</p>
+            <ul>
+                <li><code>/etc/apache2/apache2.conf</code></li>
+            </ul>
+            <p>Este archivo contiene las configuraciones globales del servidor y aplica a todas las webs del servidor, salvo que estas directivas se redefinan en contextos inferiores como en <strong>Virtual Host</strong>.</p>
+
+            <h2>Variables de Entorno del Servidor Apache2</h2>
+            <p>Archivo de variables de entorno: <code>/etc/apache2/envvars</code></p>
+            <ul>
+                <li><img src="./img/flecha.png" id="flecha2">valores que el servidor Apache utiliza.</li>
+                <li><img src="./img/flecha.png" id="flecha2">Ejemplos de variables de entorno:</li>
+                <ul>
+                    <li><code>APACHE_RUN_USER</code></li>
+                    <li><code>APACHE_RUN_GROUP</code></li>
+                    <li><code>APACHE_RUN_DIR</code></li>
+                    <li><code>APACHE_LOCK_DIR</code></li>
+                    <li><code>APACHE_PID_FILE</code></li>
+                    <li><code>APACHE_LOG_DIR</code></li>
+                </ul>
+            </ul>
+
+            <h2>Directivas Básicas</h2>
+            <ul>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>ServerName</strong>: Indica el nombre con el que el servidor se identifica a sí mismo. <br>Ejemplo: <code>ServerName daw27.deap27.net</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>ServerRoot</strong>: Directorio donde se encuentran los archivos de configuración de Apache. <br>Ejemplo: <code>ServerRoot /etc/apache2</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>ServerAdmin</strong>: Correo del administrador. <br>Ejemplo: <code>ServerAdmin admin@daw27.deap27.net</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>DocumentRoot</strong>: Directorio que contiene los archivos servidos por Apache. <br>Ejemplo: <code>DocumentRoot /var/www/html</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>PidFile</strong>: Fichero que almacena el ID del proceso de Apache. <br>Ejemplo: <code>PidFile /var/run/apache2/apache2.pid</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>User</strong>: Usuario con el que Apache se ejecuta. <br>Por defecto: <code>User www-data</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>Group</strong>: Grupo con el que Apache se ejecuta. <br>Por defecto: <code>Group www-data</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>ErrorLog</strong>: Archivo donde se almacenan los errores de Apache. <br>Ejemplo: <code>ErrorLog /var/log/apache2/errorlog.log</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>Listen</strong>: Dirección IP y puerto en el que escucha Apache. <br>Ejemplo: <code>Listen 80</code> y <code>Listen 10.3.11.227:80</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>DirectoryIndex</strong>: Nombres de los ficheros servidos como índice. <br>Ejemplo: <code>DirectoryIndex index.html index.php</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>TypesConfig</strong>: Archivo con la lista de tipos MIME. <br>Ejemplo: <code>TypesConfig /etc/mime.types</code></li>
+                <li><img src="./img/flecha-correcta.png" id="flecha"><strong>DefaultType</strong>: Tipo MIME por defecto. <br>Ejemplo: <code>DefaultType text/plain</code></li>
+            </ul>
+            <a href="#top" id="volver-arriba"><img src="./img/flecha-hacia-arriba.png" id="flechaArriba"></a>
+        </div>
+    </main>
+</body>
+</html>

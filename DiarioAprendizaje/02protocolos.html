@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diario de Aprendeizaje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <h3><a href="00index.html">GitHub</a></h3>
+        <li>
+            <ul><a href="01areasFicheros.html">Áreas y ficheros</a></ul>
+            <ul><a href="01configuracion.html">Configuración Inicial y subir cambio</a></ul>
+            <ul><a href="01iniciarProceso.html">Iniciando el proceso</a></ul>
+            <ul><a href="01ramas.html">Ramas</a></ul>
+            <ul><a href="01primerosPasos.html">Primeros Pasos</a></ul>
+            <ul><a href="01evaluacion.html">Evaluación del progreso</a></ul>
+        </li>
+        <h3>Servicios Web</h3>
+        <li>
+            <li>
+                <ul><a href="02protocolos.html">PROTOCOLOS HTTP/HTTPS</a></ul>
+                <ul>
+                    <a href="02apache.html">Apache</a>
+                    <ul>
+                        <li><a href="02dBasicas.html">Directivas Básicas</a></li>
+                        <li><a href="02dBloque.html">Directivas de Bloque</a></li>
+                    </ul>
+                </ul>
+            </li>
+        </li>
+    </aside>
+    <main>
+        <div class="sw" id="top">
+            <fieldset>
+                <table> 
+                    <legend>Funcionamiento</legend>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Servidor</th>
+                    </tr>
+                    <tr>
+                        <td>Solicita e interpreta el contenido</td>
+                        <td>Sirve contenido estático</td>
+                    </tr>
+                    <tr>
+                        <td>Renderiza en la pantalla el resultado</td>
+                        <td>Ejecuta programas para generar contenido dinámico(PHP)</td>
+                    </tr>
+                    <tr>
+                        <td>Interactúa con el usuario</td>
+                        <td>Certificado SSL/TLS</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mediante extensiones genera contenido dinámico (Javascript,AJAX)</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <h2>El Navegador Cliente Web</h2>
+            <ul id="listas2">
+                <li>Utilizando el protocolo HTTP descarga los documentos en los diferentes
+                formatos de la web (HTML, CSS, Javascript) así como los recursos asociados
+                como fuentes, iconos o multimedia (imágenes – vídeos).</li>
+                <li>Puede negociar algunas características particulares. Por ejemplo, si se
+                soporta compresión o no.</li>
+                <li>Interpreta la información en los documentos y renderiza el documento.
+                Permite recoger información del usuario y enviarla al servidor como parámetros
+                en una petición web GET o POST.</li>
+                <li>Gestiona las cookies que han sido enviadas por los servidores.</li>
+            </ul>
+            <h2>Servidor Web</h2>
+            <ul id="listas2">
+                <li>El servidor web, soporta el protocolo HTTP / HTTPS.</li>
+                <li>Atiende a las peticiones del cliente.</li>
+                <li>Autenticación de Usuarios.</li>
+                <li>SSL/ TLS</li>
+                <li>De forma nativa, o mediante módulos, permite ejecutar aplicaciones de diferentes formas:
+                    <ul>
+                        <li>CGI : Common Gateway Interface</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+                <li>Puede haber módulos que permitan de forma transparente alterar el contenido para optimizarlo o con otros fines.</li>
+                <li>HTML, Javascript, AJAX</li>
+            </ul>
+
+            <h2>Protocolo HTTP</h2>
+            <ul id="listas2">
+                <li>Orientado a petición / respuesta (Request / Response)</li>
+                <li>Soporta los métodos: GET, POST, HEAD, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH</li>
+                <li>Las peticiones y respuestas transportan información adicional en los encabezados HTTP.</li>
+                <li>Cada petición retorna un código de estado. El mensaje suele ser personalizable.</li>
+                <li>Cada petición podría ir en una conexión independiente pero actualmente se suele utilizar una única conexión para varias peticiones a no ser que se indique lo contrario. Esto ahorra recursos del servidor.</li>
+                <li>Las cookies son un mecanismo para la gestión de estado en el protocolo HTTP (RFC2109)</li>
+            </ul>
+            
+            <h2>Protocolo DNS</h2>
+            <ul id="listas2">
+                <li>DNS (Domain Name System) protocolo capa aplicación:</li>
+                <li>Su función es resolver nombres (dominios) legibles para las personas en identificadores binarios (direcciones IP) legibles para las máquinas</li>
+                <li>El servidor DNS utiliza una base de datos distribuida y jerárquica que almacena información asociada a nombres de dominio.</li>
+                <li>Utiliza el puerto UDP 53.</li>
+                <li>https://es.deap.daw.org
+                    <ul>
+                        <li>.org à dominio de nivel superior (TLD)</li>
+                        <li>daw à subdominio, dominio de segundo nivel.</li>
+                        <li>deap à subdominio, dominio de tercer nivel.</li>
+                        <li>es.deap.daw.org à hostname, nodo de nombre completo (FQDN)</li>
+                    </ul>
+                </li>
+                <li>Más información sobre formato de nombres de host y otros datos:
+                    <ul>
+                        <li>https://tools.ietf.org/html/rfc1123#page-13</li>
+                    </ul>
+                </li>
+                <li>Normalmente se utiliza servidores DNS de los ISPs.</li>
+            </ul>
+            <div class="http-status">
+                <fieldset>
+                    <legend>Códigos de Estado HTTP</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Categoría</th>
+                                <th>Significado</th>
+                                <th>Ejemplos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1xx</td>
+                                <td>Mensajes Informativos</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>2xx</td>
+                                <td>Éxito</td>
+                                <td>200 OK, 201 Created, 204 No Content</td>
+                            </tr>
+                            <tr>
+                                <td>3xx</td>
+                                <td>Redirección</td>
+                                <td>301 Moved Permanently, 304 Not Modified</td>
+                            </tr>
+                            <tr>
+                                <td>4xx</td>
+                                <td>Error del Cliente</td>
+                                <td>400 Bad Request, 404 Not Found</td>
+                            </tr>
+                            <tr>
+                                <td>5xx</td>
+                                <td>Error del Servidor</td>
+                                <td>500 Internal Server Error, 502 Bad Gateway</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+            <h2>Funcionamiento</h2>
+            <ul id="listas2">
+                <li>Los servidores DNS que reciben la petición, buscan en primer lugar si disponen de la respuesta en la memoria caché.</li>
+                <li>Si lo encuentran, sirven la respuesta.</li>
+                <li>En caso contrario, inician la búsqueda en otros DNS.</li>
+                <li>Una vez encontrada la respuesta, el servidor DNS guardará el resultado en su memoria caché para futuros usos y devuelve el resultado.</li>
+                <li>Reenviadores: consultas a nombres DNS externos a servidores DNS normalmente fuera de la red.</li>
+            </ul>
+
+            <h2>Tipos de Registro</h2>
+            <ul id="listas2">
+                <li>Resolución directa vs. Resolución Inversa</li>
+                <li>La resolución directa, permite traducir un nombre a una dirección IP</li>
+                <li>La resolución inversa, mediante la definición de registros PTR permite obtener el nombre que corresponde con una dirección IP. Se basa en el dominio in-addr.arpa. Se van añadiendo los diferentes números en la IP en sentido inverso.</li>
+            </ul>
+
+            <h2>El campo TTL</h2>
+            <ul id="listas2">
+                <li>TTL à Time To Live.</li>
+                <li>Define el tiempo que debe vivir ese registro en las memorias caché de los Servidores antes de que se vuelvan a solicitar.</li>
+                <li>Todos los registros de la caché DNS tienen este campo.</li>
+                <li>Guarda una relación directa con el tiempo que tardan en propagarse los cambios.</li>
+            </ul>
+
+            <h2>Herramientas DNS de consulta</h2>
+            <ul id="listas2">
+                <li>nslookup</li>
+                <li>dig</li>
+            </ul>
+            <a href="#top" id="volver-arriba"><img src="./img/flecha-hacia-arriba.png" id="flechaArriba"></a>
+        </div>
+    </main>
+</body>
+</html>
